@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROMEDIA SOLUTIONS | Posicionamiento & Tecnología Agro de Elite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agroDark: '#080C0A',
+                        agroGreen: '#122C1C',
+                        agroAccent: '#7BA03E',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+        }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            animation: scroll 25s linear infinite;
+        }
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-agroDark text-white font-sans antialiased selection:bg-agroAccent selection:text-black">
+
+    <header class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md px-6 lg:px-12 py-4 flex justify-between items-center border-b border-white/10">
+        <a href="#" class="flex items-center gap-3">
+            <img src="IMG_9049.PNG" alt="AGROMEDIA SOLUTIONS" class="h-10 w-auto object-contain">
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8 text-xs uppercase font-bold tracking-widest text-white/80">
+            <a href="#somos" class="hover:text-agroAccent transition">Somos</a>
+            <a href="#servicios" class="hover:text-agroAccent transition">Servicios</a>
+            <a href="#sistemas" class="hover:text-agroAccent transition">Sistemas Custom</a>
+            <a href="#contacto" class="hover:text-agroAccent transition">Contacto</a>
+        </nav>
+
+        <a href="#contacto" class="bg-agroAccent hover:bg-white text-black font-extrabold text-xs uppercase tracking-widest px-5 py-2.5 rounded-full transition">
+            Agendar Reunión VIP
+        </a>
+    </header>
+
+    <section class="relative h-screen w-full flex items-end pb-16 px-6 lg:px-16 overflow-hidden">
+        
+        <div class="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+            <video autoplay loop muted playsinline class="w-full h-full object-cover filter brightness-[0.4] contrast-[1.1]">
+                <source src="imágenes de drone de campo de maíz _ cornfield drone footage [ no copyright].mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video HTML5.
+            </video>
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-t from-agroDark via-black/30 to-transparent pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-5xl space-y-6">
+            <div class="inline-flex items-center gap-3 bg-black/60 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10">
+                <span class="w-2 h-2 rounded-full bg-agroAccent animate-pulse"></span>
+                <span class="text-[11px] font-mono uppercase tracking-[0.25em] text-agroAccent">Agromedia Solutions • Ecosistema </span>
+            </div>
+
+            <h1 class="text-4xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-none text-white">
+                Socios estratégicos del agro de elite.
+            </h1>
+
+            <p class="text-lg md:text-2xl text-gray-200 font-light max-w-2xl leading-relaxed">
+                Producción audiovisual cinematográfica, posicionamiento de marca y desarrollo de sistemas a medida para cabañas, haras y agroindustrias de exportación.
+            </p>
+
+            <div class="pt-4 flex flex-wrap gap-4 items-center">
+                <a href="#servicios" class="bg-agroAccent hover:bg-white text-black font-black px-8 py-4 rounded-full text-xs uppercase tracking-widest transition">
+                    Explorar Servicios
+                </a>
+                <a href="#contacto" class="border border-white/30 hover:border-white text-white font-bold px-8 py-4 rounded-full text-xs uppercase tracking-widest transition backdrop-blur-sm">
+                    Solicitar Diagnóstico en Campo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-6 bg-agroGreen text-white border-y border-white/10 overflow-hidden whitespace-nowrap font-black text-xl uppercase tracking-widest">
+        <div class="marquee-container">
+            <div class="marquee-content space-x-12">
+                <span>• CABAÑAS & GENÉTICA BOVINA</span>
+                <span>• HARAS & EQUINOS DE ELITE</span>
+                <span>• ESTANCIAS & TURISMO VIP</span>
+                <span>• SEMILLERAS & BIOTECHNOLOGY</span>
+                <span>• AGROINDUSTRIA & MAQUINARIA</span>
+            </div>
+            <div class="marquee-content space-x-12">
+                <span>• CABAÑAS & GENÉTICA BOVINA</span>
+                <span>• HARAS & EQUINOS DE ELITE</span>
+                <span>• ESTANCIAS & TURISMO VIP</span>
+                <span>• SEMILLERAS & BIOTECHNOLOGY</span>
+                <span>• AGROINDUSTRIA & MAQUINARIA</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="somos" class="py-24 px-6 lg:px-16 bg-black border-b border-white/10">
+        <div class="max-w-5xl mx-auto space-y-6">
+            <span class="text-xs font-mono text-agroAccent uppercase tracking-widest">// Misión & Propósito</span>
+            <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                El activo más valioso es el prestigio y la confianza.
+            </h2>
+            <p class="text-gray-300 text-lg md:text-xl font-light leading-relaxed">
+                Para sostener transacciones de valor elevado, su marca requiere una infraestructura tecnológica y una narrativa audiovisual alineadas al nivel de excelencia de sus campos y productos. Nuestra propuesta transforma su reputación en un activo rentable e inquebrantable.
+            </p>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 px-6 lg:px-16 bg-agroDark">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="border-b border-white/10 pb-6">
+                <span class="text-xs font-mono text-agroAccent uppercase">Capacidades</span>
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight mt-2">Qué Hacemos</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="border border-white/10 p-8 rounded-lg bg-black/40 hover:border-agroAccent transition space-y-4">
+                    <span class="text-xs font-mono text-agroAccent">01 / AUDIOVISUAL</span>
+                    <h3 class="text-2xl font-black uppercase">Cine & Rodajes 4K</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Filmación en terreno con drones FPV y cámaras 4K. Edición documental y catálogos digitales de genética.</p>
+                </div>
+                <div class="border border-white/10 p-8 rounded-lg bg-black/40 hover:border-agroAccent transition space-y-4">
+                    <span class="text-xs font-mono text-agroAccent">02 / MARKETING</span>
+                    <h3 class="text-2xl font-black uppercase">Captación VIP</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Branding patrimonial y pauta hiper-segmentada en Google, LinkedIn y Meta para atraer inversores.</p>
+                </div>
+                <div class="border border-white/10 p-8 rounded-lg bg-black/40 hover:border-agroAccent transition space-y-4">
+                    <span class="text-xs font-mono text-agroAccent">03 / WEB</span>
+                    <h3 class="text-2xl font-black uppercase">Web & Showrooms</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Portales interactivos con fichas de pedigrí, catálogos 3D o recorridos virtuales 360°.</p>
+                </div>
+                <div class="border border-white/10 p-8 rounded-lg bg-black/40 hover:border-agroAccent transition space-y-4">
+                    <span class="text-xs font-mono text-agroAccent">04 / SOFTWARE</span>
+                    <h3 class="text-2xl font-black uppercase">Sistemas Custom</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Plataformas privadas de remates, pre-ofertas con streaming y portales para inversores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sistemas" class="py-24 px-6 lg:px-16 bg-black border-y border-white/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-xs font-mono text-agroAccent uppercase">// Cotización Independiente</span>
+                <h2 class="text-4xl md:text-5xl font-black uppercase">Software & Sistemas Agro a Medida</h2>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Desarrollamos infraestructura tecnológica propietaria para la gestión comercial y operativa del sector agropecuario, diseñada específicamente según la escala y necesidades de cada firma:
+                </p>
+                
+                <ul class="space-y-3 text-xs font-mono text-gray-400">
+                    <li class="flex items-start gap-2">
+                        <span class="text-agroAccent">■</span>
+                        <span><strong>Pre-ofertas & Remates en Vivo:</strong> Subastas virtuales con streaming en directo, registro de oferentes y mesa de control en tiempo real.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-agroAccent">■</span>
+                        <span><strong>Sistemas de Reservas Exclusivas:</strong> Software personalizado para la comercialización de estadías VIP en estancias patrimoniales.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-agroAccent">■</span>
+                        <span><strong>CRM & Portales Privados:</strong> Plataformas cerradas con trazabilidad genética, certificados digitales y boletos de compra.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="border border-agroAccent/40 bg-agroDark p-8 rounded-xl space-y-6">
+                <h3 class="text-xl font-bold uppercase text-white">Metodología "Llave en Mano"</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Cada proyecto de software e infraestructura digital inicia con una reunión ejecutiva de requerimientos técnicos. Todo el desarrollo se encuentra amparado por un acuerdo de confidencialidad estricto (NDA).
+                </p>
+                <a href="#contacto" class="block text-center bg-white text-black font-black py-4 text-xs uppercase tracking-widest hover:bg-agroAccent transition">
+                    Solicitar Reunión de Requerimientos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="py-24 px-6 lg:px-16 bg-black">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="space-y-6">
+                <h3 class="text-3xl font-black uppercase">Solicitar Reunión Ejecutiva</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Póngase en contacto con nuestro equipo directivo para coordinar una reunión de evaluación estratégica y analizar las necesidades específicas de su establecimiento.
+                </p>
+                <div class="text-xs font-mono text-gray-400 space-y-2">
+                    <p>📧 Email: comercial@agromediasolutions.com</p>
+                    <p>🌐 Web: agromediasolutions.com</p>
+                </div>
+            </div>
+
+            <form class="space-y-6">
+                <div>
+                    <label class="text-xs font-mono uppercase text-gray-400 block mb-2">Nombre & Cargo</label>
+                    <input type="text" placeholder="Ej: Dr. Roberto Gómez - Director" class="w-full bg-agroDark border-b border-white/30 py-3 text-white focus:outline-none focus:border-agroAccent transition">
+                </div>
+                <div>
+                    <label class="text-xs font-mono uppercase text-gray-400 block mb-2">Establecimiento / Empresa</label>
+                    <input type="text" placeholder="Ej: Cabaña Don Pedro / Haras El Sol" class="w-full bg-agroDark border-b border-white/30 py-3 text-white focus:outline-none focus:border-agroAccent transition">
+                </div>
+                <div>
+                    <label class="text-xs font-mono uppercase text-gray-400 block mb-2">Mensaje / Requerimiento Principal</label>
+                    <textarea rows="3" placeholder="Detalle brevemente las necesidades o servicios sobre los que desea consultar..." class="w-full bg-agroDark border-b border-white/30 py-3 text-white focus:outline-none focus:border-agroAccent transition resize-none"></textarea>
+                </div>
+                <button type="button" class="w-full bg-white text-black hover:bg-agroAccent font-black py-4 uppercase tracking-widest text-xs transition">
+                    Enviar Consulta & Agendar Reunión
+                </button>
+            </form>
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/10 flex justify-between items-center text-[10px] text-gray-600 font-mono">
+            <span>AGROMEDIA SOLUTIONS</span>
+            <span>CONFIDENCIAL — SERVICIOS & DESARROLLOS CORPORATIVOS</span>
+        </div>
+    </footer>
+
+</body>
+</html>
